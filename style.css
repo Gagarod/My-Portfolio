@@ -63,6 +63,8 @@ main {
   margin-top: 1rem;
 }
 
+/* NAVBAR */
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -98,11 +100,17 @@ main {
   cursor: pointer;
 }
 
+/* HOME SECTION */
+
 .homeSection {
+  height: 100vh;
+  margin-top: 7rem;
+}
+
+.socialMwdiaAndBlob {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 7rem;
 }
 
 .socialMedia {
@@ -187,4 +195,111 @@ main {
 
 .scrollDown {
   font-size: 15px;
+}
+
+/* ABOUT SECTION */
+
+.aboutSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mainHeadingDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutMeHeading {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  margin-top: 0rem;
+}
+
+.myImg {
+  width: 300px;
+}
+
+.imgAndDescDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.aboutMeDesc {
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 365px;
+}
+
+.descriptionAndCvDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2.5rem 0rem;
+}
+
+.expAndProjects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 365px;
+  margin: 2.5rem 0rem;
+}
+
+.yearsDiv,
+.projectsDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.yearExp,
+.projectNo {
+  font-size: 2rem;
+}
+
+.yearAndPrjctDes {
+  font-weight: 400;
+}
+
+.downloadCvBtn {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  /* text-shadow: 1px 1px 0px black; */
+  /* box-shadow: 1px 1px 1px black; */
+  padding: 20px 30px;
+  width: 220px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: black;
+  cursor: pointer;
+  outline: none;
+}
+
+.downloadCvBtn:hover,
+.downloadCvBtn:active {
+  outline: none;
+  cursor: pointer;
+  /* color: #14396A !important; */
+  /* background: #468CCF; */
+  /* background: linear-gradient(to top, #468CCF, #63B8EE); */
+}
+
+
+/* SKILL SECTION */
+
+.skillSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
