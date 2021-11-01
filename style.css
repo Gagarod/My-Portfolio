@@ -98,7 +98,7 @@ main {
   cursor: pointer;
 }
 
-.main {
+.homeSection {
   display: flex;
   justify-content: space-around;
   align-items: center;
