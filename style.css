@@ -47,14 +47,16 @@ img {
 }
 
 header {
-  width: 1000px;
+  width: 100wh;
   margin: auto;
-  margin-top: 1rem;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
+  height: 60px;
+  background-color: rgb(248, 248, 248);
+  box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
 }
 
 main {
@@ -69,6 +71,9 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1000px;
+  margin: auto;
+  margin: 20px auto;
 }
 
 .navMenuDiv {
@@ -368,3 +373,255 @@ main {
 #flutterIcon {
   width: 20px;
 }
+
+/* PROJECT SECTION */
+.projectSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.projectHeadingDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projectsHeading {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  margin-top: -5rem;
+}
+
+/* CONTACT SECTION */
+.contactSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.contactDiv {
+  background-color: rgba(139, 139, 221, 0.863);
+  width: 1000px;
+  height: 85%;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 25px;
+  position: relative;
+}
+
+.mailSection {
+  width: 500px;
+  margin: 0rem 4rem;
+}
+
+.contactHeadingDiv {
+  color: white;
+}
+
+.contactHeading {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+}
+
+.contactHeadingDiv .introHeading {
+  font-size: 0.9rem;
+  margin: 1rem 0rem;
+  font-weight: 400;
+}
+
+.contactForm {
+  color: #fff;
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  margin: 0.7rem 0rem;
+}
+
+.contactLabel {
+  margin: 0.5rem 0rem;
+}
+
+.contactInput {
+  width: 100%;
+  background-color: #e3e8ff;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: rgba(1, 1, 8, 0.863);
+  padding: 0.7rem 0.5rem;
+  border-radius: 10px;
+}
+
+.msgBtnDiv {
+  margin-top: 2.5rem;
+}
+
+.msgButton {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  /* text-shadow: 1px 1px 0px black; */
+  /* box-shadow: 1px 1px 1px black; */
+  padding: 15px 30px;
+  width: 220px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: black;
+  cursor: pointer;
+  outline: none;
+}
+
+.msgButton:hover,
+.msgButton:active {
+  outline: none;
+  cursor: pointer;
+  /* color: #14396A !important; */
+  /* background: #468CCF; */
+  /* background: linear-gradient(to top, #468CCF, #63B8EE); */
+}
+
+.logoSection {
+  width: 500px;
+  margin: 0rem 4rem;
+}
+
+.mailImg {
+  margin-top: -1.5rem;
+  margin-left: -3rem;
+  width: 90%;
+}
+
+.conatctInfo {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 1.5rem 0rem;
+}
+
+.phoneIcon,
+.mailIcon {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: #fff;
+}
+
+.infoTitle {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.infoSubtite {
+  font-weight: 400;
+  color: #fff;
+}
+
+.contactSocialMediaDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.contactSocialLinks {
+  margin: 0rem 0.8rem;
+  background-color: aqua;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactSocialLinks i {
+  color: #fff;
+  padding: 10px;
+}
+
+.desgin {
+  position: absolute;
+  height: 30px;
+  background-color: red;
+  border-radius: 15px;
+  width: 150px;
+}
+
+.oneDiv {
+  top: 45px;
+  left: -100px;
+  background-color: #fff;
+}
+
+.twoDiv {
+  top: 45px;
+  right: -75px;
+  background-color: #fff;
+}
+
+.threeDiv {
+  top: 15px;
+  right: -40px;
+  background-color: #9a9ae0;
+}
+
+.fourthDiv {
+  top: 450px;
+  right: -115px;
+  background-color: #fff;
+}
+
+.fifthDiv {
+  top: 480px;
+  right: -30px;
+  background-color: #9a9ae0;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.sixthDiv {
+  top: 195px;
+  left: -25px;
+  width: 75px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #9a9ae0;
+}
+
+.seventhDiv {
+  top: 235px;
+  left: -100px;
+  background-color: #fff;
+}
+
+.eigthDiv {
+  top: 265px;
+  left: -45px;
+  width: 75px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #9a9ae0;
+}
+
+.ninthDiv {
+  top: 75px;
+  right: -30px;
+  background-color: #9a9ae0;
+  height: 50px;
+  border-radius: 25px;
+}
+
+
