@@ -17,13 +17,17 @@
 
 :root {
   --blue-theme: #9a9ae0;
+  --lightBlue-theme: #9a9ae0e0;
+  --blueFont: #9a9ae1;
+  --whiteFont: rgb(255, 255, 255);
   --white-shade: #fff;
   --html: #ff5024;
   --css: #1a72ba;
   --js: #ffdd24;
   --cpp: #00ab45;
-  --flutter:#00c7fa;
+  --flutter: #00c7fa;
   --git: #272b34;
+  --body-color: white;
 }
 
 html {
@@ -33,6 +37,16 @@ html {
 body {
   color: black;
   font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+  background-color: var(--body-color);
+}
+
+.dark-theme {
+  --blue-theme: #9a9ae0;
+  --lightBlue-theme: #9a9ae0e0;
+  --blueFont: white;
+  --white-shade: #fff;
+  --body-color: #0e0e52 ;
 }
 
 ul {
@@ -68,6 +82,28 @@ main {
   margin-top: 1rem;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--white-shade);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue-theme);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--lightBlue-theme);
+}
+
 /* NAVBAR */
 
 .nav {
@@ -79,7 +115,7 @@ main {
   margin: 20px auto;
 }
 
-.myLogo{
+.myLogo {
   color: var(--white-shade);
 }
 
@@ -102,16 +138,24 @@ main {
   justify-content: space-around;
   align-items: center;
   color: var(--white-shade);
+  transition: 0.3s;
+}
+
+.navLink:hover {
+  transform: translateY(-0.25rem);
 }
 
 #darkMode {
   display: none;
   cursor: pointer;
+  transition: 0.3s;
+  color: var(--white-shade);
 }
 
 #lightMode {
   cursor: pointer;
   color: var(--white-shade);
+  transition: 0.3s;
 }
 
 /* HOME SECTION */
@@ -139,7 +183,7 @@ main {
 }
 
 .socialMediaLinks i {
-  color: var(--blue-theme);
+  color: var(--blueFont);
 }
 
 .myDetails {
@@ -150,13 +194,13 @@ main {
   font-size: 3rem;
   margin-bottom: 1rem;
   font-weight: 700;
-  color: var(--blue-theme);
+  color: var(--blueFont);
 }
 
 .subtitle {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--blue-theme);
+  color: var(--blueFont);
 }
 
 .myDesc {
@@ -164,30 +208,33 @@ main {
   margin-bottom: 2rem;
   font-weight: 400;
   width: 350px;
-  color: var(--blue-theme);
+  color: var(--blueFont);
 }
 
 .contactMeBtn {
   color: var(--white-shade);
   font-size: 1rem;
   font-weight: 600;
-  /* text-shadow: 1px 1px 0px black; */
-  /* box-shadow: 1px 1px 1px black; */
   padding: 20px 30px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
   outline: none;
   background-color: var(--blue-theme);
+  transition: 0.3s;
+}
+
+.contactMeBtn i {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  transition: 0.3s;
 }
 
 .contactMeBtn:hover,
 .contactMeBtn:active {
   outline: none;
   cursor: pointer;
-  /* color: #14396A !important; */
-  /* background: #468CCF;
-  background: linear-gradient(to top, #468CCF, #63B8EE); */
+  background: var(--lightBlue-theme);
 }
 
 .blobGenerator {
@@ -200,7 +247,7 @@ main {
   display: inline-block;
 }
 
-#blob{
+#blob {
   fill: var(--blue-theme);
 }
 
@@ -220,13 +267,22 @@ main {
   margin-left: 11.5rem;
   cursor: pointer;
   width: 150px;
+  transition: 0.3s;
+}
+
+.scrollDownBtn:hover {
+  transform: translateY(0.25rem);
 }
 
 #mouseIcon,
 .scrollDown,
 #angleDownIcon {
   margin: 0.2rem;
-  color: var(--blue-theme);
+  color: var(--blueFont);
+}
+
+#mouseIcon {
+  font-size: 1.25rem;
 }
 
 .scrollDown {
@@ -248,7 +304,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: var(--blue-theme);
+  color: var(--blueFont);
 }
 
 .aboutMeHeading {
@@ -260,6 +316,7 @@ main {
 
 .myImg {
   width: 300px;
+  border-radius: 15px;
 }
 
 .imgAndDescDiv {
@@ -281,7 +338,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   margin: 2.5rem 0rem;
-  color: var(--blue-theme);
+  color: var(--blueFont);
 }
 
 .expAndProjects {
@@ -311,13 +368,11 @@ main {
   color: var(--white-shade);
   font-size: 1rem;
   font-weight: 600;
-  /* text-shadow: 1px 1px 0px black; */
-  /* box-shadow: 1px 1px 1px black; */
   padding: 20px 30px;
   width: 220px;
   border-radius: 10px;
   border: none;
-  background-color:var(--blue-theme);
+  background-color: var(--blue-theme);
   cursor: pointer;
   outline: none;
 }
@@ -326,9 +381,7 @@ main {
 .downloadCvBtn:active {
   outline: none;
   cursor: pointer;
-  /* color: #14396A !important; */
-  /* background: #468CCF; */
-  /* background: linear-gradient(to top, #468CCF, #63B8EE); */
+  background: var(--lightBlue-theme);
 }
 
 /* SKILL SECTION */
@@ -346,7 +399,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: var(--blue-theme);
+  color: var(--blueFont);
 }
 
 .skillHeading {
@@ -460,7 +513,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: var(--blue-theme);
+  color: var(--blueFont);
 }
 
 .projectsHeading {
@@ -494,12 +547,17 @@ main {
   width: 400px;
   height: 250px;
   max-width: 90%;
-  transform: translateY(0px);
   transition: transform 0.2s ease 0s;
   transition: 0.3s;
-  border-radius: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: var(--whiteFont);
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.card:hover {
+  transform: translateY(-0.35rem);
 }
 
 .projectLinks {
@@ -514,21 +572,21 @@ main {
 }
 
 .projectLinks i {
-  color:var(--white-shade);
+  color: var(--white-shade);
 }
 
 .titleAndIconDiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0.5rem 0.2rem;
+  margin: 0.5rem;
   color: var(--blue-theme);
 }
 
 .projectImg {
   height: 70%;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .projectIcons {
@@ -547,7 +605,7 @@ main {
 }
 
 .contactDiv {
-  background-color:var(--blue-theme);
+  background-color: var(--blue-theme);
   width: 1000px;
   height: 85%;
   margin-top: 3rem;
@@ -621,12 +679,18 @@ main {
   background-color: var(--white-shade);
   cursor: pointer;
   outline: none;
+  transition: 0.3s;
 }
 
 .msgButton:hover,
 .msgButton:active {
   outline: none;
   cursor: pointer;
+}
+
+.msgButton i {
+  transition: 0.3s;
+  margin-left: 0.2rem;
 }
 
 .logoSection {
@@ -675,13 +739,13 @@ main {
 .oneDiv {
   top: 45px;
   left: -100px;
-  background-color: var(--white-shade);
+  background-color: var(--body-color);
 }
 
 .twoDiv {
   top: 45px;
   right: -75px;
-  background-color: var(--white-shade);
+ background-color: var(--body-color);
 }
 
 .threeDiv {
@@ -693,7 +757,7 @@ main {
 .fourthDiv {
   top: 450px;
   right: -115px;
-  background-color: var(--white-shade);
+ background-color: var(--body-color);
 }
 
 .fifthDiv {
@@ -716,7 +780,7 @@ main {
 .seventhDiv {
   top: 235px;
   left: -100px;
-  background-color: var(--white-shade);
+ background-color: var(--body-color);
 }
 
 .eigthDiv {

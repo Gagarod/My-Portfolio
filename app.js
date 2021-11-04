@@ -1,5 +1,13 @@
 const allProjects = document.getElementById('allProject');
 const navIcon = document.querySelectorAll('.navLink i');
+const scrollDownBtn = document.querySelector('.scrollDownBtn');
+const lightModeBtn = document.getElementById('lightMode');
+const darkModeBtn = document.getElementById('darkMode');
+
+
+scrollDownBtn.addEventListener('click', function () {
+    window.scrollTo(0, document.querySelector("body").scrollHeight);
+});
 
 for (let i = 0; i < navIcon.length; i++) {
     navIcon[i].style.display = 'none';
@@ -11,7 +19,7 @@ function getProjects() {
         .then(response => response.json())
         .then(data => {
             return data
-        })
+        });
 }
 
 
@@ -45,4 +53,16 @@ function showProjects(project) {
 
 getProjects().then(data => {
     showProjects(data);
+});
+
+lightModeBtn.addEventListener('click', function () {
+    lightModeBtn.style.display = 'none';
+    darkModeBtn.style.display = 'block';
+    document.body.classList.add('dark-theme');
+});
+
+darkModeBtn.addEventListener('click', function () {
+    darkModeBtn.style.display = 'none';
+    lightModeBtn.style.display = 'block';
+    document.body.classList.remove('dark-theme');
 });
