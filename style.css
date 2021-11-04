@@ -16,9 +16,9 @@
 }
 
 :root {
-  --darkBlue-theme: #000918;
+  --blue-theme: #9a9ae0;
   --lightBlue-shade: #e7effc;
-  --font-shade: #fff;
+  --white-shade: #fff;
   --btn-shadow: #bbbbbb;
   --songFont-color: #6c7a94;
   --btn-angleShadow: rgb(148, 148, 148);
@@ -56,7 +56,7 @@ header {
   right: 0;
   z-index: 10;
   height: 60px;
-  background-color: rgb(248, 248, 248);
+  background-color: var(--blue-theme);
   box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
 }
 
@@ -77,6 +77,10 @@ main {
   margin: 20px auto;
 }
 
+.myLogo{
+  color: var(--white-shade);
+}
+
 .navMenuDiv {
   width: 600px;
 }
@@ -95,6 +99,7 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: var(--white-shade);
 }
 
 #darkMode {
@@ -104,6 +109,7 @@ main {
 
 #lightMode {
   cursor: pointer;
+  color: var(--white-shade);
 }
 
 /* HOME SECTION */
@@ -130,6 +136,10 @@ main {
   margin-right: 7rem;
 }
 
+.socialMediaLinks i {
+  color: var(--blue-theme);
+}
+
 .myDetails {
   width: 410px;
 }
@@ -138,11 +148,13 @@ main {
   font-size: 3rem;
   margin-bottom: 1rem;
   font-weight: 700;
+  color: var(--blue-theme);
 }
 
 .subtitle {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: var(--blue-theme);
 }
 
 .myDesc {
@@ -150,20 +162,21 @@ main {
   margin-bottom: 2rem;
   font-weight: 400;
   width: 350px;
+  color: var(--blue-theme);
 }
 
 .contactMeBtn {
-  color: white;
+  color: var(--white-shade);
   font-size: 1rem;
   font-weight: 600;
   /* text-shadow: 1px 1px 0px black; */
   /* box-shadow: 1px 1px 1px black; */
   padding: 20px 30px;
   border-radius: 10px;
-  border: 2px solid black;
-  background-color: black;
+  border: none;
   cursor: pointer;
   outline: none;
+  background-color: var(--blue-theme);
 }
 
 .contactMeBtn:hover,
@@ -171,8 +184,8 @@ main {
   outline: none;
   cursor: pointer;
   /* color: #14396A !important; */
-  /* background: #468CCF; */
-  /* background: linear-gradient(to top, #468CCF, #63B8EE); */
+  /* background: #468CCF;
+  background: linear-gradient(to top, #468CCF, #63B8EE); */
 }
 
 .blobGenerator {
@@ -183,6 +196,10 @@ main {
   width: 400px;
   overflow: hidden;
   display: inline-block;
+}
+
+#blob{
+  fill: var(--blue-theme);
 }
 
 .blobImg {
@@ -207,6 +224,7 @@ main {
 .scrollDown,
 #angleDownIcon {
   margin: 0.2rem;
+  color: var(--blue-theme);
 }
 
 .scrollDown {
@@ -228,6 +246,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: var(--blue-theme);
 }
 
 .aboutMeHeading {
@@ -260,6 +279,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   margin: 2.5rem 0rem;
+  color: var(--blue-theme);
 }
 
 .expAndProjects {
@@ -286,7 +306,7 @@ main {
 }
 
 .downloadCvBtn {
-  color: white;
+  color: var(--white-shade);
   font-size: 1rem;
   font-weight: 600;
   /* text-shadow: 1px 1px 0px black; */
@@ -294,8 +314,8 @@ main {
   padding: 20px 30px;
   width: 220px;
   border-radius: 10px;
-  border: 2px solid black;
-  background-color: black;
+  border: none;
+  background-color:var(--blue-theme);
   cursor: pointer;
   outline: none;
 }
@@ -324,6 +344,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: var(--blue-theme);
 }
 
 .skillHeading {
@@ -346,7 +367,7 @@ main {
 
 .skillData {
   width: 315px;
-  background-color: #6c7a94;
+  background-color: var(--blue-theme);
   border-radius: 10px;
 }
 
@@ -355,6 +376,7 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  color: var(--white-shade);
 }
 
 .skillsIcon {
@@ -367,7 +389,7 @@ main {
 
 .skillBar {
   width: 300px;
-  background-color: rgba(199, 196, 196, 0.76);
+  background-color: var(--white-shade);
   height: 10px;
   border-radius: 10px;
   margin: 6px auto;
@@ -376,7 +398,42 @@ main {
 
 .skillPercentageHTML {
   width: 90%;
-  background-color: red;
+  background-color: #ff5024;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.skillPercentageCSS {
+  width: 80%;
+  background-color: #1a72ba;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.skillPercentageJS {
+  width: 65%;
+  background-color: #ffdd24;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.skillPercentageCPP {
+  width: 70%;
+  background-color: #00ab45;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.skillPercentageFlutter {
+  width: 65%;
+  background-color: #00c7fa;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.skillPercentageGit {
+  width: 75%;
+  background-color: black;
   height: 10px;
   border-radius: 10px;
 }
@@ -399,6 +456,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: var(--blue-theme);
 }
 
 .projectsHeading {
@@ -442,7 +500,7 @@ main {
 
 .projectLinks {
   margin: 0rem 0.1rem;
-  background-color: aqua;
+  background-color: var(--blue-theme);
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -452,7 +510,7 @@ main {
 }
 
 .projectLinks i {
-  color: #fff;
+  color:var(--white-shade);
 }
 
 .titleAndIconDiv {
@@ -460,6 +518,7 @@ main {
   justify-content: space-between;
   align-items: center;
   margin: 0.5rem 0.2rem;
+  color: var(--blue-theme);
 }
 
 .projectImg {
@@ -484,7 +543,7 @@ main {
 }
 
 .contactDiv {
-  background-color: rgba(139, 139, 221, 0.863);
+  background-color:var(--blue-theme);
   width: 1000px;
   height: 85%;
   margin-top: 3rem;
@@ -503,7 +562,7 @@ main {
 }
 
 .contactHeadingDiv {
-  color: white;
+  color: var(--white-shade);
 }
 
 .contactHeading {
@@ -519,7 +578,7 @@ main {
 }
 
 .contactForm {
-  color: #fff;
+  color: var(--white-shade);
 }
 
 .contactContent {
@@ -548,16 +607,14 @@ main {
 }
 
 .msgButton {
-  color: white;
+  color: var(--blue-theme);
   font-size: 0.8rem;
   font-weight: 600;
-  /* text-shadow: 1px 1px 0px black; */
-  /* box-shadow: 1px 1px 1px black; */
   padding: 15px 30px;
   width: 220px;
   border-radius: 10px;
-  border: 2px solid black;
-  background-color: black;
+  border: outline;
+  background-color: var(--white-shade);
   cursor: pointer;
   outline: none;
 }
@@ -566,9 +623,6 @@ main {
 .msgButton:active {
   outline: none;
   cursor: pointer;
-  /* color: #14396A !important; */
-  /* background: #468CCF; */
-  /* background: linear-gradient(to top, #468CCF, #63B8EE); */
 }
 
 .logoSection {
@@ -584,7 +638,6 @@ main {
 
 .conatctInfo {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   margin: 1.5rem 0rem;
 }
@@ -593,18 +646,18 @@ main {
 .mailIcon {
   font-size: 1.5rem;
   margin: 1rem;
-  color: #fff;
+  color: var(--white-shade);
 }
 
 .infoTitle {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
-  color: #fff;
+  color: var(--white-shade);
 }
 
 .infoSubtite {
   font-weight: 400;
-  color: #fff;
+  color: var(--white-shade);
 }
 
 .contactDesgin {
@@ -618,31 +671,31 @@ main {
 .oneDiv {
   top: 45px;
   left: -100px;
-  background-color: #fff;
+  background-color: var(--white-shade);
 }
 
 .twoDiv {
   top: 45px;
   right: -75px;
-  background-color: #fff;
+  background-color: var(--white-shade);
 }
 
 .threeDiv {
   top: 15px;
   right: -40px;
-  background-color: #9a9ae0;
+  background-color: var(--blue-theme);
 }
 
 .fourthDiv {
   top: 450px;
   right: -115px;
-  background-color: #fff;
+  background-color: var(--white-shade);
 }
 
 .fifthDiv {
   top: 480px;
   right: -30px;
-  background-color: #9a9ae0;
+  background-color: var(--blue-theme);
   height: 50px;
   border-radius: 25px;
 }
@@ -653,13 +706,13 @@ main {
   width: 75px;
   height: 40px;
   border-radius: 25px;
-  background-color: #9a9ae0;
+  background-color: var(--blue-theme);
 }
 
 .seventhDiv {
   top: 235px;
   left: -100px;
-  background-color: #fff;
+  background-color: var(--white-shade);
 }
 
 .eigthDiv {
@@ -668,13 +721,13 @@ main {
   width: 75px;
   height: 40px;
   border-radius: 25px;
-  background-color: #9a9ae0;
+  background-color: var(--blue-theme);
 }
 
 .ninthDiv {
   top: 75px;
   right: -30px;
-  background-color: #9a9ae0;
+  background-color: var(--blue-theme);
   height: 50px;
   border-radius: 25px;
 }
@@ -683,7 +736,7 @@ main {
 .footer {
   width: 100%;
   height: 300px;
-  background-color: #9a9ae0;
+  background-color: var(--blue-theme);
 }
 
 .fotterBg {
@@ -707,11 +760,11 @@ main {
 }
 
 .fotterTitle {
-  color: #fff;
+  color: var(--white-shade);
 }
 
 .fotterSubttitle {
-  color: #fff;
+  color: var(--white-shade);
   font-weight: 400;
   margin-top: 1rem;
 }
@@ -736,7 +789,7 @@ main {
 
 .footerSocialLinks {
   margin: 0rem 0.8rem;
-  background-color: #fff;
+  background-color: var(--white-shade);
   border-radius: 50%;
   height: 40px;
   width: 40px;
@@ -752,12 +805,12 @@ main {
 
 .fotterLink {
   font-weight: 700;
-  color: #fff;
+  color: var(--white-shade);
 }
 
 .copyright {
   margin: 1rem 0rem;
-  color: #fff;
+  color: var(--white-shade);
   display: flex;
   justify-content: center;
   align-items: center;
