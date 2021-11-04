@@ -420,7 +420,7 @@ main {
   border-radius: 10px;
   overflow: hidden;
   width: 400px;
-  height: 370px;
+  height: 250px;
   max-width: 90%;
   transform: translateY(0px);
   transition: transform 0.2s ease 0s;
@@ -453,7 +453,7 @@ main {
 }
 
 .projectImg {
-  height: 85%;
+  height: 70%;
   width: 100%;
   border-radius: 10px;
 }
