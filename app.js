@@ -1,18 +1,34 @@
 const allProjects = document.getElementById('allProject');
-const navIcon = document.querySelectorAll('.navLink i');
 const scrollDownBtn = document.querySelector('.scrollDownBtn');
 const lightModeBtn = document.getElementById('lightMode');
 const darkModeBtn = document.getElementById('darkMode');
 const showBtnDiv = document.querySelector('.showBtnDiv');
 const showAllBtn = document.getElementById('showAll');
 
+const navMenuDiv = document.querySelector('.navMenuDiv');
+const myLogo = document.querySelector('.myLogo');
+const navClose = document.getElementById('nav-close');
+const navToggle = document.getElementById('nav-toggle');
+
+
+
+navToggle.addEventListener('click', function () {
+    navMenuDiv.classList.remove('hideAndSeek');
+    navToggle.classList.add('hideAndSeek');
+    myLogo.classList.add('hideAndSeek');
+});
+
+navClose.addEventListener('click', function () {
+    navMenuDiv.classList.add('hideAndSeek');
+    navToggle.classList.remove('hideAndSeek');
+    myLogo.classList.remove('hideAndSeek');
+});
+
+
 scrollDownBtn.addEventListener('click', function () {
     window.scrollTo(0, document.querySelector("body").scrollHeight);
 });
 
-for (let i = 0; i < navIcon.length; i++) {
-    navIcon[i].style.display = 'none';
-}
 
 // fetch project start
 function getProjects() {
