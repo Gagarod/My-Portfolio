@@ -25,20 +25,26 @@ function getProjects() {
 
 var state = "less";
 let projectsHTML = "";
+let i = 0;
 
 showAllBtn.addEventListener('click', function () {
     showBtnDiv.style.display = 'none';
     state = 'more';
+    getProjects().then(data => {
+        showProjects(data);
+    });
 });
+
+
 
 function showProjects(project) {
     if (state == 'less') {
-        for (let i = 0; i < 9; i++) {
+        for (; i < 9; i++) {
             projectCreation(project[i]);
         }
     }
     else if (state == 'more') {
-        for (let i = 0; i < project.length; i++) {
+        for (; i < project.length; i++) {
             projectCreation(project[i]);
         }
     }
