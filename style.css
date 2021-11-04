@@ -64,7 +64,7 @@ img {
 }
 
 header {
-  width: 100wh;
+  width: 100%;
   margin: auto;
   position: fixed;
   top: 0;
@@ -77,7 +77,7 @@ header {
 }
 
 main {
-  width: 1000px;
+  width: 62.5rem;
   margin: auto;
   margin-top: 1rem;
 }
@@ -110,9 +110,9 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1000px;
+  width: 62.5rem;
   margin: auto;
-  margin: 20px auto;
+  margin: 1.25rem auto;
 }
 
 .myLogo {
@@ -121,7 +121,7 @@ main {
 }
 
 .navMenuDiv {
-  width: 600px;
+  width: 37.5rem;
 }
 
 .navMenuList {
@@ -189,7 +189,7 @@ main {
 }
 
 .myDetails {
-  width: 410px;
+  width: 25.625rem;
 }
 
 .title {
@@ -209,7 +209,7 @@ main {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   font-weight: 400;
-  width: 350px;
+  width: 21.875rem;
   color: var(--blueFont);
 }
 
@@ -217,7 +217,7 @@ main {
   color: var(--white-shade);
   font-size: 1rem;
   font-weight: 600;
-  padding: 20px 30px;
+  padding: 1.25rem 1.875rem;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -244,7 +244,7 @@ main {
 }
 
 #blobSvg {
-  width: 400px;
+  width: 25rem;
   overflow: hidden;
   display: inline-block;
 }
@@ -254,8 +254,8 @@ main {
 }
 
 .blobImg {
-  height: 300px;
-  width: 400px;
+  height: 18.75rem;
+  width: 25rem;
   x: 37;
   y: 131;
   display: inline-block;
@@ -268,7 +268,7 @@ main {
   margin-top: 5rem;
   margin-left: 11.5rem;
   cursor: pointer;
-  width: 150px;
+  width: 9.375rem;
   transition: 0.3s;
 }
 
@@ -317,7 +317,7 @@ main {
 }
 
 .myImg {
-  width: 300px;
+  width: 18.75rem;
   border-radius: 15px;
 }
 
@@ -332,7 +332,7 @@ main {
 .aboutMeDesc {
   font-size: 1.2rem;
   font-weight: 400;
-  width: 365px;
+  width: 22.813rem;
 }
 
 .descriptionAndCvDiv {
@@ -347,7 +347,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 365px;
+  width: 22.813rem;
   margin: 2.5rem 0rem;
 }
 
@@ -370,8 +370,8 @@ main {
   color: var(--white-shade);
   font-size: 1rem;
   font-weight: 600;
-  padding: 20px 30px;
-  width: 220px;
+  padding: 1.25rem 1.875rem;
+  width: 13.75rem;
   border-radius: 10px;
   border: none;
   background-color: var(--blue-theme);
@@ -418,12 +418,12 @@ main {
   justify-content: center;
   align-items: center;
   justify-items: center;
-  gap: 60px;
+  gap: 3.75rem;
   margin-top: 5rem;
 }
 
 .skillData {
-  width: 315px;
+  width: 19.688rem;
   background-color: var(--blue-theme);
   border-radius: 10px;
 }
@@ -445,7 +445,7 @@ main {
 }
 
 .skillBar {
-  width: 300px;
+  width: 18.75rem;
   background-color: var(--white-shade);
   height: 10px;
   border-radius: 10px;
@@ -533,7 +533,7 @@ main {
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  gap: 50px 20px;
+  gap: 3.125rem 1.25rem;
   padding: 5px;
   overflow: hidden;
   position: relative;
@@ -547,8 +547,8 @@ main {
   padding: 0px;
   border-radius: 10px;
   overflow: hidden;
-  width: 400px;
-  height: 250px;
+  width: 25rem;
+  height: 15.625rem;
   max-width: 90%;
   transition: transform 0.2s ease 0s;
   transition: 0.3s;
@@ -604,7 +604,7 @@ main {
 
 .showBtnDiv {
   width: 100%;
-  height: 300px;
+  height: 18.75rem;
   border-radius: 10px;
   position: absolute;
   z-index: 6;
@@ -618,13 +618,13 @@ main {
   left: 50%;
   z-index: 6;
   top: 0;
-  padding: 15px 40px;
+  padding: 0.938rem 2.5rem;
   font-weight: bold;
   transform: translateX(-50%);
   color: var(--white-shade);
   font-size: 1rem;
   font-weight: 600;
-  padding: 20px 30px;
+  padding: 1.25rem 1.875rem;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -644,7 +644,7 @@ main {
 
 .contactDiv {
   background-color: var(--blue-theme);
-  width: 1000px;
+  width: 62.5rem;
   height: 85%;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -657,7 +657,7 @@ main {
 }
 
 .mailSection {
-  width: 500px;
+  width: 31.25rem;
   margin: 0rem 4rem;
 }
 
@@ -710,8 +710,8 @@ main {
   color: var(--blue-theme);
   font-size: 0.8rem;
   font-weight: 600;
-  padding: 15px 30px;
-  width: 220px;
+  padding: 0.938rem 1.875rem;
+  width: 13.75rem;
   border-radius: 10px;
   border: outline;
   background-color: var(--white-shade);
@@ -732,7 +732,7 @@ main {
 }
 
 .logoSection {
-  width: 500px;
+  width: 31.25rem;
   margin: 0rem 4rem;
 }
 
@@ -768,10 +768,10 @@ main {
 
 .contactDesgin {
   position: absolute;
-  height: 30px;
+  height: 1.875rem;
   background-color: red;
   border-radius: 15px;
-  width: 150px;
+  width: 9.375rem;
 }
 
 .oneDiv {
@@ -841,12 +841,12 @@ main {
 /* FOTTER */
 .footer {
   width: 100%;
-  height: 300px;
+  height: 18.75rem;
   background-color: var(--blue-theme);
 }
 
 .fotterBg {
-  width: 1000px;
+  width: 62.5rem;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -857,12 +857,12 @@ main {
 .fotterConti {
   display: flex;
   justify-content: space-between;
-  height: 200px;
+  height: 12.5rem;
   padding: 1.5rem 1rem;
 }
 
 .fotterDetails {
-  width: 300px;
+  width: 18.75rem;
 }
 
 .fotterTitle {
@@ -883,13 +883,13 @@ main {
 .footerLinksList {
   display: flex;
   justify-content: space-around;
-  width: 400px;
+  width: 25rem;
 }
 
 .footerSocialMediaDiv {
   display: flex;
   justify-content: space-around;
-  width: 400px;
+  width: 25rem;
   margin-top: 2rem;
 }
 
@@ -897,8 +897,8 @@ main {
   margin: 0rem 0.8rem;
   background-color: var(--white-shade);
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -921,7 +921,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 500px;
+  width: 31.25rem;
 }
 
 .copyright h3 {
@@ -936,6 +936,6 @@ main {
 
 .fotterLine {
   height: 2px;
-  width: 800px;
+  width: 50rem;
   background-color: #bbbbbb;
 }
