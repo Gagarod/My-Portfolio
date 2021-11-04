@@ -180,6 +180,16 @@ main {
 
 #blobSvg {
   width: 400px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.blobImg {
+  height: 300px;
+  width: 400px;
+  x: 37;
+  y: 131;
+  display: inline-block;
 }
 
 .scrollDownBtn {
@@ -306,7 +316,6 @@ main {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  
 }
 
 .skillHeadingDiv {
@@ -441,7 +450,7 @@ main {
   align-items: center;
 }
 
-.projectLinks i{
+.projectLinks i {
   color: #fff;
 }
 

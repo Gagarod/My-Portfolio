@@ -1,5 +1,9 @@
 const allProjects = document.getElementById('allProject');
+const navIcon = document.querySelectorAll('.navLink i');
 
+for (let i = 0; i < navIcon.length; i++) {
+    navIcon[i].style.display = 'none';
+}
 
 // fetch project start
 function getProjects() {

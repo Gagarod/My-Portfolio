@@ -92,16 +92,22 @@
                         work.
                     </h4>
                     <button class="contactMeBtn">Contact Me <i id="msgIcon" class="far fa-envelope"></i></button>
-
                 </div>
 
                 <div class="blobGenerator">
                     <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" id="blobSvg">
-                        <path id="blob"
-                            d="M401,316Q326,382,227.5,420.5Q129,459,96,354.5Q63,250,109.5,168.5Q156,87,246,93.5Q336,100,406,175Q476,250,401,316Z">
-                        </path>
-                        </path>
+                        <mask id="mask0" mask-type="alpha">
+                            <path id="blob"
+                                d="M401,316Q326,382,227.5,420.5Q129,459,96,354.5Q63,250,109.5,168.5Q156,87,246,93.5Q336,100,406,175Q476,250,401,316Z" />
+
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path id="blob"
+                                d="M401,316Q326,382,227.5,420.5Q129,459,96,354.5Q63,250,109.5,168.5Q156,87,246,93.5Q336,100,406,175Q476,250,401,316Z" />
+                            <image class="blobImg" xlink:href="./images/orange-white.png" />
+
+                        </g>
                     </svg>
                 </div>
             </div>
@@ -235,7 +241,7 @@
             </div>
 
             <div id="allProject" class="allProjects">
-              
+
             </div>
 
         </section>

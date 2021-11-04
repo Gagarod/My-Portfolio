@@ -1,7 +1,7 @@
   [
   {
     "id": 14,
-    "name": "Weather-App",
+    "name": "Weather App",
     "image": "https://user-images.githubusercontent.com/32032008/139583029-d2429d17-67a4-4bee-b308-498c978e1809.png",
     "links": {
       "view": "https://neelesh-weather-app.netlify.app/",
@@ -11,7 +11,7 @@
 
   {
     "id": 13,
-    "name": "Music-Player",
+    "name": "Music Player",
     "image": "https://user-images.githubusercontent.com/32032008/139024891-692a6499-c22c-4303-80a4-8b37847ac23e.png",
     "links": {
       "view": "https://im-player.netlify.app/",
@@ -21,7 +21,7 @@
 
   {
     "id": 12,
-    "name": "To-Do-List",
+    "name": "To Do List",
     "image": "https://user-images.githubusercontent.com/32032008/138338482-06aba16b-7489-46c0-9faa-9f8e56984bce.png",
     "links": {
       "view": "https://neelesh-todolist.netlify.app/",
@@ -30,7 +30,7 @@
   },
   {
     "id": 11,
-    "name": "JS-Tip-And-Normal-Calculator",
+    "name": "JS Tip And Normal Calculator",
     "image": "https://user-images.githubusercontent.com/32032008/137508127-849937ab-b3bf-4f4c-82af-530af729e423.png",
     "links": {
       "view": "https://neelesh-calculators.netlify.app/",
@@ -40,7 +40,7 @@
 
   {
     "id": 10,
-    "name": "Clocks-and-Countdown",
+    "name": "Clocks and Countdown",
     "image": "https://user-images.githubusercontent.com/32032008/136787614-77f5e8da-afde-4fa3-a636-8334adff5cae.png",
     "links": {
       "view": "https://clocksandcountdown.netlify.app/",
@@ -60,7 +60,7 @@
 
   {
     "id": 8,
-    "name": "Score-Keeper",
+    "name": "Score Keeper",
     "image": "https://user-images.githubusercontent.com/32032008/135217101-6e506f9b-5e21-4081-84c4-b57f2c573e3a.png",
     "links": {
       "code": "https://github.com/singhsduos/Score-Keeper",
@@ -70,7 +70,7 @@
 
   {
     "id": 7,
-    "name": "Movies-Or-Series-Reccomendation",
+    "name": "Movies Or Series Reccomendation",
     "image": "https://user-images.githubusercontent.com/32032008/132621477-0eb20219-1c47-4f7a-8c55-b4426bc8026b.png",
     "links": {
       "view": "https://movie-reccomendation-app.netlify.app/",
@@ -80,7 +80,7 @@
 
   {
     "id": 6,
-    "name": "Emoji-Pedia",
+    "name": "Emoji Pedia",
     "image": "https://user-images.githubusercontent.com/32032008/132011946-2969ed8b-ec3e-431b-b70a-a22abc885a9f.png",
     "links": {
       "view": "https://emoji-pedias.netlify.app/",
@@ -90,7 +90,7 @@
 
   {
     "id": 5,
-    "name": "Minions-Speak-App",
+    "name": "Minions Speak App",
     "image": "https://user-images.githubusercontent.com/32032008/131671888-38b56273-ee0c-45f0-afca-80e0dd714a5f.png",
     "links": {
       "view": "https://minions-speak-up.netlify.app/",
@@ -100,7 +100,7 @@
 
   {
     "id": 4,
-    "name": "Death-Note-Quiz",
+    "name": "Death Note Quiz",
     "image": "https://user-images.githubusercontent.com/32032008/131322149-6c534a2f-63f1-406b-bd0e-e3e35d47715a.jpg",
     "links": {
       "view": "https://replit.com/@NeeleshSingh3/Death-Note-Quiz-NodeJs-CLI-Quiz-App?embed=1&output=1",
@@ -110,7 +110,7 @@
 
   {
     "id": 3,
-    "name": "Do-You-Know-Me-Quiz",
+    "name": "Do You Know Me Quiz",
     "image": "https://user-images.githubusercontent.com/32032008/131259274-4b36f9b5-c5e8-4c27-9735-10576cbeb19d.png",
     "links": {
       "view": "https://replit.com/@NeeleshSingh3/Do-You-Know-Me-NodeJs-CLI-Quiz-App?embed=1&output=1",
