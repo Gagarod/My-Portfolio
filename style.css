@@ -46,7 +46,7 @@ body {
   --lightBlue-theme: #9a9ae0e0;
   --blueFont: white;
   --white-shade: #fff;
-  --body-color: #0e0e52 ;
+  --body-color: #0e0e52;
 }
 
 ul {
@@ -597,7 +597,43 @@ main {
   align-items: center;
 }
 
+.projectConti {
+  position: relative;
+  width: 100%;
+}
+
+.showBtnDiv {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 6;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), 20%, var(--body-color));
+  transition: all 0.3s ease 0s;
+}
+
+.showAllBtn {
+  position: absolute;
+  left: 50%;
+  z-index: 6;
+  top: 0;
+  padding: 15px 40px;
+  font-weight: bold;
+  transform: translateX(-50%);
+  color: var(--white-shade);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--blue-theme);
+}
+
 /* CONTACT SECTION */
+
 .contactSection {
   display: flex;
   align-items: center;
@@ -747,7 +783,7 @@ main {
 .twoDiv {
   top: 45px;
   right: -75px;
- background-color: var(--body-color);
+  background-color: var(--body-color);
 }
 
 .threeDiv {
@@ -759,7 +795,7 @@ main {
 .fourthDiv {
   top: 450px;
   right: -115px;
- background-color: var(--body-color);
+  background-color: var(--body-color);
 }
 
 .fifthDiv {
@@ -782,7 +818,7 @@ main {
 .seventhDiv {
   top: 235px;
   left: -100px;
- background-color: var(--body-color);
+  background-color: var(--body-color);
 }
 
 .eigthDiv {
