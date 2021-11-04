@@ -17,11 +17,13 @@
 
 :root {
   --blue-theme: #9a9ae0;
-  --lightBlue-shade: #e7effc;
   --white-shade: #fff;
-  --btn-shadow: #bbbbbb;
-  --songFont-color: #6c7a94;
-  --btn-angleShadow: rgb(148, 148, 148);
+  --html: #ff5024;
+  --css: #1a72ba;
+  --js: #ffdd24;
+  --cpp: #00ab45;
+  --flutter:#00c7fa;
+  --git: #272b34;
 }
 
 html {
@@ -398,42 +400,42 @@ main {
 
 .skillPercentageHTML {
   width: 90%;
-  background-color: #ff5024;
+  background-color: var(--html);
   height: 10px;
   border-radius: 10px;
 }
 
 .skillPercentageCSS {
   width: 80%;
-  background-color: #1a72ba;
+  background-color: var(--css);
   height: 10px;
   border-radius: 10px;
 }
 
 .skillPercentageJS {
   width: 65%;
-  background-color: #ffdd24;
+  background-color: var(--js);
   height: 10px;
   border-radius: 10px;
 }
 
 .skillPercentageCPP {
   width: 70%;
-  background-color: #00ab45;
+  background-color: var(--cpp);
   height: 10px;
   border-radius: 10px;
 }
 
 .skillPercentageFlutter {
   width: 65%;
-  background-color: #00c7fa;
+  background-color: var(--flutter);
   height: 10px;
   border-radius: 10px;
 }
 
 .skillPercentageGit {
   width: 75%;
-  background-color: black;
+  background-color: var(--git);
   height: 10px;
   border-radius: 10px;
 }
