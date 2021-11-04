@@ -306,6 +306,7 @@ main {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
+  
 }
 
 .skillHeadingDiv {
@@ -380,7 +381,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 180vh;
 }
 
 .projectHeadingDiv {
@@ -395,6 +396,72 @@ main {
   margin-bottom: 0.2rem;
   font-weight: 700;
   margin-top: -5rem;
+}
+
+.allProjects {
+  display: grid;
+  grid-template-columns: 333px 333px 333px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 50px 20px;
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+  max-height: 100%;
+  margin: 1.5rem 0rem;
+}
+
+.card {
+  justify-self: center;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 400px;
+  height: 370px;
+  max-width: 90%;
+  transform: translateY(0px);
+  transition: transform 0.2s ease 0s;
+  transition: 0.3s;
+  border-radius: 5px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.projectLinks {
+  margin: 0rem 0.1rem;
+  background-color: aqua;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectLinks i{
+  color: #fff;
+}
+
+.titleAndIconDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0.2rem;
+}
+
+.projectImg {
+  height: 85%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.projectIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* CONTACT SECTION */
@@ -552,7 +619,7 @@ main {
   padding: 10px;
 }
 
-.desgin {
+.contactDesgin {
   position: absolute;
   height: 30px;
   background-color: red;
@@ -623,5 +690,3 @@ main {
   height: 50px;
   border-radius: 25px;
 }
-
-
