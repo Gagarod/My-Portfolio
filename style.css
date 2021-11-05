@@ -1133,4 +1133,30 @@ main {
     width: 80%;
     margin: 1.5rem 0rem;
   }
+
+  /* SKILL SECTION */
+
+  .skillSection {
+    height: auto;
+    margin-top: 5rem;
+  }
+
+  .skillHeading {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+
+  .allSkillsList {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.75rem;
+    margin-top: 3rem;
+  }
+
+  .skillData {
+    width: 20rem;
+  }
+
+  .skillBar {
+    width: 19rem;
+  }
 }
