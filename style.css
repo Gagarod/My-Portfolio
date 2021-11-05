@@ -1046,6 +1046,7 @@ main {
 
   .homeSection {
     height: auto;
+    margin: auto;
     margin-top: -3rem;
   }
 
@@ -1101,6 +1102,7 @@ main {
 
   .aboutSection {
     height: 100vh;
+    margin: auto;
     margin-top: 5rem;
   }
 
@@ -1140,6 +1142,7 @@ main {
 
   .skillSection {
     height: auto;
+    margin: auto;
     margin-top: 5rem;
   }
 
@@ -1166,6 +1169,7 @@ main {
 
   .projectSection {
     height: auto;
+    margin: auto;
     margin-top: 5rem;
   }
 
@@ -1193,6 +1197,7 @@ main {
 
   .contactSection {
     height: auto;
+    margin: 3rem auto;
   }
 
   .contactDiv {
@@ -1218,10 +1223,15 @@ main {
     align-items: center;
   }
 
+  .contactDesgin {
+    display: none;
+  }
+
   /* FOTTER */
 
   .footer {
     height: auto;
+    display: none;
   }
 
   .fotterBg {
