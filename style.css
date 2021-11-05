@@ -1202,7 +1202,7 @@ main {
 
   .contactHeading {
     margin-top: 2rem;
-}
+  }
 
   .mailSection,
   .logoSection {
@@ -1215,5 +1215,19 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+  }
+
+  /* FOTTER */
+
+  .footer {
+    height: auto;
+  }
+
+  .fotterBg {
+    width: 90%;
+  }
+
+  .fotterLine {
+    width: 80%;
   }
 }
