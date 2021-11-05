@@ -16,6 +16,11 @@ This is my personal website where I showed my skills and projects.
 [![jAVASCRIPT](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## ScreenShot
+![Screenshot_20211106_000253](https://user-images.githubusercontent.com/32032008/140561420-fecdf07b-621d-48f2-a5ad-745f0e7170f7.png)
+![Screenshot_20211106_000329](https://user-images.githubusercontent.com/32032008/140561426-5859367d-a281-4b14-86e7-9e855a3828eb.png)
+![Screenshot_20211106_000319](https://user-images.githubusercontent.com/32032008/140561493-33af3846-5e8a-4ce0-a662-b64935e5c019.png)
+
+
 
 
 
