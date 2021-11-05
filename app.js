@@ -41,7 +41,6 @@ function blank() {
     console.log("hello")
 }
 
-// msgBtnDiv.addEventListener('click', sendMail);
 
 
 navToggle.addEventListener('click', function () {
