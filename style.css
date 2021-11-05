@@ -591,7 +591,10 @@ main {
   height: 70%;
   width: 100%;
   border-radius: 15px;
+  transition: 0.3s;
 }
+
+
 
 .projectIcons {
   display: flex;
@@ -1158,5 +1161,32 @@ main {
 
   .skillBar {
     width: 19rem;
+  }
+
+  /* PROJECT SECTION */
+
+  .projectSection {
+    height: auto;
+    margin-top: 5rem;
+  }
+
+  .projectsHeading {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+
+  .allProjects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .card {
+    height: auto;
+    min-width: 90%;
+  }
+
+  .titleAndIconDiv {
+    margin-top: 2rem;
   }
 }
