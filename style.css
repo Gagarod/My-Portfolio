@@ -1258,14 +1258,61 @@ textarea {
 
   .footer {
     height: auto;
-    display: none;
+    /* display: none; */
+    padding-top: 2rem;
   }
 
   .fotterBg {
     width: 90%;
   }
 
-  .fotterLine {
+  .fotterConti {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+  }
+
+  .fotterSubttitle {
     width: 80%;
+  }
+
+  .footerLinksDiv {
+    width: 90%;
+  }
+
+  .footerLinksList {
+    flex-direction: column;
+    margin: 2rem 0rem;
+    width: 90%;
+  }
+
+  .footerLinksList li {
+    margin: 1rem 0rem;
+  }
+
+  .footerSocialMediaDiv {
+    width: 10rem;
+    margin-top: 0rem;
+  }
+
+  .fotterLink {
+    margin: 8rem 0rem;
+    height: 13rem;
+    font-size: 1.2rem;
+  }
+
+  .footerSocialLinks {
+    width: 3.5rem;
+}
+
+  .fotterLine {
+    width: 90%;
+    margin: 1rem 0rem;
+    margin-top: 16rem;
+  }
+
+  .copyright {
+    margin-bottom: 8rem;
+    width: 90%;
   }
 }
