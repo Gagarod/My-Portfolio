@@ -318,17 +318,17 @@ main {
   margin-top: 0rem;
 }
 
-.myImg {
-  width: 18.75rem;
-  border-radius: 15px;
-}
-
 .imgAndDescDiv {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   margin-top: 2rem;
+}
+
+.myImg {
+  width: 18.75rem;
+  border-radius: 15px;
 }
 
 .aboutMeDesc {
@@ -1059,7 +1059,7 @@ main {
     margin-right: 3rem;
   }
 
-  .svgAndDetails{
+  .svgAndDetails {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: flex-start;
@@ -1090,7 +1090,47 @@ main {
   }
 
   .scrollDownBtn {
+    display: none;
     margin-top: 3rem;
     margin-left: 0.7rem;
+  }
+
+  /* ABOUT SECTION */
+
+  .aboutSection {
+    height: 100vh;
+    margin-top: 5rem;
+  }
+
+  .aboutMeHeading {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+
+  .imgAndDescDiv {
+    flex-direction: column;
+  }
+
+  .myImg {
+    width: 200px;
+  }
+
+  .aboutMeDesc {
+    width: 80%;
+  }
+
+  .descriptionAndCvDiv {
+    align-items: center;
+    margin: 1.5rem 0rem;
+  }
+
+  .yearExp,
+  .projectNo {
+    font-size: 1.5rem;
+  }
+
+  .expAndProjects {
+    width: 80%;
+    margin: 1.5rem 0rem;
   }
 }
