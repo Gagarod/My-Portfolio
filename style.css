@@ -160,7 +160,10 @@ main {
 
 .homeSection {
   height: 100vh;
-  margin-top: 7rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .socialMediaAndBlob {
@@ -678,6 +681,12 @@ main {
   font-size: 0.9rem;
   margin: 1rem 0rem;
   font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.contactHeadingDiv .introHeading i {
+  margin: 0rem 0.3rem;
 }
 
 .contactForm {
@@ -703,6 +712,10 @@ main {
   color: rgba(1, 1, 8, 0.863);
   padding: 0.7rem 0.5rem;
   border-radius: 10px;
+}
+
+textarea {
+  resize: none;
 }
 
 .msgBtnDiv {
@@ -1145,7 +1158,7 @@ main {
 
   .expAndProjects {
     width: 80%;
-    margin: 1.5rem 0rem;
+    margin: 2.5rem 0rem;
   }
 
   /* SKILL SECTION */

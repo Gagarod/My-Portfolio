@@ -11,6 +11,39 @@ const navClose = document.getElementById('nav-close');
 const navToggle = document.getElementById('nav-toggle');
 
 
+const clientName = document.getElementById('clientName');
+const clientMail = document.getElementById('clientMail');
+const clientMsg = document.getElementById('clientMsg');
+
+function sendMail(params) {
+    var tempParams = {
+        to_name: "Neelesh singh",
+        from_name: clientName.value,
+        message: clientMsg.value,
+        reply_to: clientMail.value,
+    };
+
+    clientName.value = "";
+    clientMail.value = "";
+    clientMsg.value = "";
+
+    emailjs.send('gmail', 'template_o6ge12b', tempParams)
+        .then(function (res) {
+            console.log("sucess", res.status);
+            alert("Your message sent successfully");
+        });
+}
+
+function blank() {
+    clientName.value = "";
+    clientMail.value = "";
+    clientMsg.value = "";
+    console.log("hello")
+}
+
+// msgBtnDiv.addEventListener('click', sendMail);
+
+
 navToggle.addEventListener('click', function () {
     navMenuDiv.classList.remove('hideAndSeek');
     navToggle.classList.add('hideAndSeek');
