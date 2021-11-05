@@ -594,8 +594,6 @@ main {
   transition: 0.3s;
 }
 
-
-
 .projectIcons {
   display: flex;
   justify-content: center;
@@ -1188,5 +1186,34 @@ main {
 
   .titleAndIconDiv {
     margin-top: 2rem;
+  }
+
+  /* CONTACT SECTION */
+
+  .contactSection {
+    height: auto;
+  }
+
+  .contactDiv {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .contactHeading {
+    margin-top: 2rem;
+}
+
+  .mailSection,
+  .logoSection {
+    width: 75%;
+    margin: 1rem auto;
+  }
+
+  .logoSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }

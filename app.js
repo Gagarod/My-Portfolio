@@ -11,7 +11,6 @@ const navClose = document.getElementById('nav-close');
 const navToggle = document.getElementById('nav-toggle');
 
 
-
 navToggle.addEventListener('click', function () {
     navMenuDiv.classList.remove('hideAndSeek');
     navToggle.classList.add('hideAndSeek');
@@ -43,6 +42,17 @@ var state = "less";
 let projectsHTML = "";
 let i = 0;
 
+let bodyWidth = '';
+
+function m() {
+    bodyWidth = document.querySelector('body').clientWidth;
+    getProjects().then(data => {
+        showProjects(data);
+    });
+}
+
+setInterval(m, 100);
+
 showAllBtn.addEventListener('click', function () {
     showBtnDiv.style.display = 'none';
     state = 'more';
@@ -54,7 +64,12 @@ showAllBtn.addEventListener('click', function () {
 
 
 function showProjects(project) {
-    if (state == 'less') {
+    if (bodyWidth < 741 && state == 'less') {
+        for (; i < 5; i++) {
+            projectCreation(project[i]);
+        }
+    }
+    else if (bodyWidth > 740 && state == 'less') {
         for (; i < 9; i++) {
             projectCreation(project[i]);
         }
