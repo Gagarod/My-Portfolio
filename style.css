@@ -643,6 +643,13 @@ main {
   background-color: var(--blue-theme);
 }
 
+.showAllBtn:hover,
+.showAllBtn:active {
+  outline: none;
+  cursor: pointer;
+  background: var(--lightBlue-theme);
+}
+
 /* CONTACT SECTION */
 
 .contactSection {
