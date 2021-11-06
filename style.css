@@ -1017,9 +1017,13 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 90%;
+    width: 90%;
     margin: 1.25rem auto;
   }
+
+  .navMenuDiv {
+    width: 90%;
+}
 
   .navToggle {
     color: var(--white-shade);
