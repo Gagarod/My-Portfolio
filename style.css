@@ -117,6 +117,7 @@ main {
   font-weight: 700;
 }
 
+
 .navMenuDiv {
   width: 70%;
 }
@@ -528,7 +529,7 @@ main {
   flex-direction: column;
   color: var(--blueFont);
 }
-
+logoImg
 .projectsHeading {
   font-size: 2.5rem;
   margin-bottom: 0.2rem;
