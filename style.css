@@ -75,7 +75,7 @@ header {
 }
 
 main {
-  width: 62.5rem;
+  width: 75%;
   margin: auto;
   margin-top: 1rem;
 }
@@ -108,7 +108,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 62.5rem;
+  width: 75%;
   margin: 1.25rem auto;
 }
 
@@ -118,7 +118,7 @@ main {
 }
 
 .navMenuDiv {
-  width: 37.5rem;
+  width: 70%;
 }
 
 .navMenuList {
@@ -176,11 +176,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-right: 2rem;
 }
 
 .socialMediaLinks {
   margin: 1rem 0rem;
-  margin-right: 7rem;
 }
 
 .socialMediaLinks i {
@@ -191,10 +191,11 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 50rem;
 }
 
 .myDetails {
-  width: 25.625rem;
+  width: 80%;
 }
 
 .title {
@@ -327,6 +328,10 @@ main {
   align-items: center;
   width: 100%;
   margin-top: 2rem;
+}
+
+.myImgDiv {
+  margin: 1rem;
 }
 
 .myImg {
@@ -533,7 +538,7 @@ main {
 
 .allProjects {
   display: grid;
-  grid-template-columns: 333px 333px 333px;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-box-align: center;
@@ -650,7 +655,7 @@ main {
 
 .contactDiv {
   background-color: var(--blue-theme);
-  width: 62.5rem;
+  width: 100%;
   height: 85%;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -663,7 +668,7 @@ main {
 }
 
 .mailSection {
-  width: 31.25rem;
+  width: 100%;
   margin: 0rem 4rem;
 }
 
@@ -726,10 +731,9 @@ textarea {
   color: var(--blue-theme);
   font-size: 0.8rem;
   font-weight: 600;
-  padding: 0.938rem 1.875rem;
+  padding: 4% 8%;
   width: 13.75rem;
   border-radius: 10px;
-  border: outline;
   background-color: var(--white-shade);
   cursor: pointer;
   outline: none;
@@ -748,8 +752,11 @@ textarea {
 }
 
 .logoSection {
-  width: 31.25rem;
-  margin: 0rem 4rem;
+  width: 100%;
+  margin: 0rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mailImg {
@@ -862,7 +869,7 @@ textarea {
 }
 
 .fotterBg {
-  width: 62.5rem;
+  width: 75%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -899,7 +906,7 @@ textarea {
 .footerLinksList {
   display: flex;
   justify-content: space-around;
-  width: 25rem;
+  width: 100%;
 }
 
 .footerSocialMediaDiv {
@@ -937,7 +944,7 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 31.25rem;
+  width: 80%;
 }
 
 .copyright h3 {
@@ -952,8 +959,9 @@ textarea {
 
 .fotterLine {
   height: 2px;
-  width: 50rem;
+  width: 75%;
   background-color: #bbbbbb;
+  margin: 0rem auto;
 }
 
 /*
@@ -1303,7 +1311,7 @@ textarea {
 
   .footerSocialLinks {
     width: 3.5rem;
-}
+  }
 
   .fotterLine {
     width: 90%;
