@@ -1,9 +1,11 @@
 const allProjects = document.getElementById('allProject');
+const sections = document.querySelectorAll('section[id]');
 const scrollDownBtn = document.querySelector('.scrollDownBtn');
 const lightModeBtn = document.getElementById('lightMode');
 const darkModeBtn = document.getElementById('darkMode');
 const showBtnDiv = document.querySelector('.showBtnDiv');
 const showAllBtn = document.getElementById('showAll');
+
 
 const navMenuDiv = document.querySelector('.navMenuDiv');
 const myLogo = document.querySelector('.myLogo');
@@ -150,3 +152,23 @@ darkModeBtn.addEventListener('click', function () {
     lightModeBtn.style.display = 'block';
     document.body.classList.remove('dark-theme');
 });
+
+
+window.addEventListener('scroll', scrollActive);
+
+function scrollActive() {
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        let sectionId = current.getAttribute('id');
+        
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector('.navMenuDiv a[href*=' + sectionId + ']').classList.add('active-link');
+        } else {
+            document.querySelector('.navMenuDiv a[href*=' + sectionId + ']').classList.remove('active-link');
+        }
+
+    });
+}
