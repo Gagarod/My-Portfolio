@@ -84,7 +84,7 @@ function m() {
     if (bodyWidth < 741) {
         const mailSection = document.querySelector('.mailSection');
         const logoSection = document.querySelector('.logoSection');
-         
+
         mailSection.setAttribute("data-aos", "fade-down");
         logoSection.setAttribute("data-aos", "fade-up");
 
@@ -123,7 +123,7 @@ function showProjects(project) {
 
 function projectCreation(project) {
     projectsHTML += `
-        <div data-aos="fade-up" data-aos-delay="${i*150}" class="card" >
+        <div data-aos="fade-up" data-aos-delay="${i * 150}" class="card" >
                 <img class="projectImg" src="${project.image}" alt="">
                     <div class="titleAndIconDiv">
                     <h3 class="projectTitle">${project.name}</h3>
@@ -174,7 +174,7 @@ function scrollActive() {
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.navMenuDiv a[href*=' + sectionId + ']').classList.add('active-link');
-    
+
 
         } else {
             document.querySelector('.navMenuDiv a[href*=' + sectionId + ']').classList.remove('active-link');
@@ -198,8 +198,8 @@ function animeBlobGenerator() {
 function animeImgDiv() {
     const sectionTop = window.scrollY;
     console.log(sectionTop);
-   
-    if (sectionTop>371) {
+
+    if (sectionTop > 371) {
         myImgDiv.style.animation = "1s ease-in scrolling"
         myImgDiv.style.opacity = "1"
     }
@@ -211,14 +211,27 @@ function headingAnime() {
     const sectionTop = window.scrollY;
     console.log(sectionTop);
 
-    if (sectionTop > 3450) {
-        developedHeading.style.animation = "500ms ease-in loading"
-        developedHeading.style.opacity = "1"
-        setTimeout(function () {
-            nameHeading.style.animation = "500ms ease-in loading"
-            nameHeading.style.opacity = "1"
-        }, delayInMilliseconds);
+    if (bodyWidth > 740) {
+        if (sectionTop > 3450) {
+            developedHeading.style.animation = "500ms ease-in loading"
+            developedHeading.style.opacity = "1"
+            setTimeout(function () {
+                nameHeading.style.animation = "500ms ease-in loading"
+                nameHeading.style.opacity = "1"
+            }, delayInMilliseconds);
 
+        }
+    }
+    else if (bodyWidth < 741) {
+        if (sectionTop > 5094) {
+            developedHeading.style.animation = "500ms ease-in loading"
+            developedHeading.style.opacity = "1"
+            setTimeout(function () {
+                nameHeading.style.animation = "500ms ease-in loading"
+                nameHeading.style.opacity = "1"
+            }, delayInMilliseconds);
+
+        }
     }
 }
 
