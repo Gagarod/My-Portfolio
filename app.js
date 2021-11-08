@@ -1,4 +1,6 @@
 window.addEventListener('load', animeBlobGenerator);
+
+// Element for buttons and features
 const allProjects = document.getElementById('allProject');
 const sections = document.querySelectorAll('section[id]');
 const scrollDownBtn = document.querySelector('.scrollDownBtn');
@@ -7,17 +9,25 @@ const darkModeBtn = document.getElementById('darkMode');
 const showBtnDiv = document.querySelector('.showBtnDiv');
 const showAllBtn = document.getElementById('showAll');
 
-
+// Element of navBar
 const navMenuDiv = document.querySelector('.navMenuDiv');
 const myLogo = document.querySelector('.myLogo');
 const navClose = document.getElementById('nav-close');
 const navToggle = document.getElementById('nav-toggle');
 
-
+// Element of contact form
 const clientName = document.getElementById('clientName');
 const clientMail = document.getElementById('clientMail');
 const clientMsg = document.getElementById('clientMsg');
 
+// Elements for animations
+const blobGenerator = document.querySelector('.blobGenerator');
+const myImgDiv = document.querySelector('.myImgDiv');
+const aboutSection = document.querySelector('#about');
+const developedHeading = document.querySelector('.copyright h3');
+const nameHeading = document.querySelector('.copyright h4');
+
+// Send Mails
 function sendMail(params) {
     var tempParams = {
         to_name: "Neelesh singh",
@@ -37,15 +47,7 @@ function sendMail(params) {
         });
 }
 
-function blank() {
-    clientName.value = "";
-    clientMail.value = "";
-    clientMsg.value = "";
-    console.log("hello")
-}
-
-
-
+// function for mobile device size navBar
 navToggle.addEventListener('click', function () {
     navMenuDiv.classList.remove('hideAndSeek');
     navToggle.classList.add('hideAndSeek');
@@ -58,7 +60,7 @@ navClose.addEventListener('click', function () {
     myLogo.classList.remove('hideAndSeek');
 });
 
-
+// Button for scrolldown of the last page
 scrollDownBtn.addEventListener('click', function () {
     window.scrollTo(0, document.querySelector("body").scrollHeight);
 });
@@ -76,10 +78,9 @@ function getProjects() {
 var state = "less";
 let projectsHTML = "";
 let i = 0;
-
 let bodyWidth = '';
 
-function m() {
+function takeBodyWidth() {
     bodyWidth = document.querySelector('body').clientWidth;
     if (bodyWidth < 741) {
         const mailSection = document.querySelector('.mailSection');
@@ -91,8 +92,10 @@ function m() {
     }
 }
 
-setInterval(m, 100);
+setInterval(takeBodyWidth, 100);
 
+
+// Button to show all projects
 showAllBtn.addEventListener('click', function () {
     showBtnDiv.style.display = 'none';
     state = 'more';
@@ -102,7 +105,7 @@ showAllBtn.addEventListener('click', function () {
 });
 
 
-
+// Showing different number of projects in different size of devices
 function showProjects(project) {
     if (bodyWidth < 741 && state == 'less') {
         for (; i < 5; i++) {
@@ -121,6 +124,7 @@ function showProjects(project) {
     }
 }
 
+// Creating cards for each project
 function projectCreation(project) {
     projectsHTML += `
         <div data-aos="fade-up" data-aos-delay="${i * 150}" class="card" >
@@ -142,24 +146,26 @@ function projectCreation(project) {
     allProjects.innerHTML = projectsHTML;
 }
 
-
+// converting json to projects
 getProjects().then(data => {
     showProjects(data);
 });
 
+// function for lightmode
 lightModeBtn.addEventListener('click', function () {
     lightModeBtn.style.display = 'none';
     darkModeBtn.style.display = 'block';
     document.body.classList.add('dark-theme');
 });
 
+// function for darkmode
 darkModeBtn.addEventListener('click', function () {
     darkModeBtn.style.display = 'none';
     lightModeBtn.style.display = 'block';
     document.body.classList.remove('dark-theme');
 });
 
-
+// Eventlistener for animation on scroll
 window.addEventListener('scroll', scrollActive);
 window.addEventListener('scroll', animeImgDiv);
 window.addEventListener('scroll', headingAnime);
@@ -182,12 +188,6 @@ function scrollActive() {
 
     });
 }
-
-const blobGenerator = document.querySelector('.blobGenerator');
-const myImgDiv = document.querySelector('.myImgDiv');
-const aboutSection = document.querySelector('#about');
-const developedHeading = document.querySelector('.copyright h3');
-const nameHeading = document.querySelector('.copyright h4');
 
 
 function animeBlobGenerator() {

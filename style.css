@@ -5,6 +5,7 @@
 |                                              |
 |     DEFAULT BODY AND OTHER CSS TAG           |
 |______________________________________________|
+
 */
 
 *,
@@ -102,7 +103,13 @@ main {
   background: var(--lightBlue-theme);
 }
 
-/* NAVBAR */
+/*
+ ______________________________________________
+|                                              |
+|             CSS FOR NAVBAR                   |
+|______________________________________________|
+
+*/
 
 .nav {
   display: flex;
@@ -169,7 +176,13 @@ main {
   transition: 0.3s ease-in;
 }
 
-/* HOME SECTION */
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR HOME SECTION                |
+|______________________________________________|
+
+*/
 
 .homeSection {
   height: 100vh;
@@ -327,7 +340,13 @@ main {
   font-size: 15px;
 }
 
-/* ABOUT SECTION */
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR ABOUT SECTION               |
+|______________________________________________|
+
+*/
 
 .aboutSection {
   display: flex;
@@ -449,7 +468,13 @@ main {
   transform: translateX(5px);
 }
 
-/* SKILL SECTION */
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR SKILL SECTION               |
+|______________________________________________|
+
+*/
 
 .skillSection {
   display: flex;
@@ -566,7 +591,13 @@ main {
   margin-left: -0.2rem;
 }
 
-/* PROJECT SECTION */
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR PROJECT SECTION             |
+|______________________________________________|
+
+*/
 
 .projectSection {
   display: flex;
@@ -716,7 +747,13 @@ main {
   transform: translateY(3px);
 }
 
-/* CONTACT SECTION */
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR CONTACT SECTION             |
+|______________________________________________|
+
+*/
 
 .contactSection {
   display: flex;
@@ -938,7 +975,14 @@ textarea {
   border-radius: 25px;
 }
 
-/* FOTTER */
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR FOTTER SECTION              |
+|______________________________________________|
+
+*/
+
 .footer {
   width: 100%;
   height: 18.75rem;
@@ -1034,8 +1078,6 @@ textarea {
   font-family: "Dancing Script", cursive;
   font-size: 1.5rem;
   opacity: 0;
-  /* animation-delay: 600ms !important; */
-
 }
 
 .fotterLine {
@@ -1053,10 +1095,26 @@ textarea {
 */
 
 @media screen and (min-width: 741px) {
+/*
+ ______________________________________________
+|                                              |
+|     DEFAULT BODY AND OTHER CSS TAG           |
+|______________________________________________|
+
+*/
+
   header {
     top: 0;
     box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
   }
+
+/*
+ ______________________________________________
+|                                              |
+|             CSS FOR NAVBAR                   |
+|______________________________________________|
+
+*/
 
   #nav-close,
   .navBtns {
@@ -1085,6 +1143,13 @@ textarea {
 }
 
 @media screen and (max-width: 740px) {
+/*
+ ______________________________________________
+|                                              |
+|     DEFAULT BODY AND OTHER CSS TAG           |
+|______________________________________________|
+
+*/
   header {
     bottom: 0;
     box-shadow: 0 -1px 4px rgb(0, 0, 0, 0.15);
@@ -1093,7 +1158,13 @@ textarea {
     height: auto;
   }
 
-  /* NAVBAR */
+/*
+ ______________________________________________
+|                                              |
+|             CSS FOR NAVBAR                   |
+|______________________________________________|
+
+*/
   .nav {
     display: flex;
     justify-content: space-between;
@@ -1148,7 +1219,13 @@ textarea {
     border-bottom: none;
   }
 
-  /* HOME SECTION */
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR HOME SECTION                |
+|______________________________________________|
+
+*/
 
   main {
     width: 95%;
@@ -1219,7 +1296,14 @@ textarea {
     margin-left: 0.7rem;
   }
 
-  /* ABOUT SECTION */
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR ABOUT SECTION               |
+|______________________________________________|
+
+
+*/
 
   .aboutSection {
     height: 100vh;
@@ -1259,7 +1343,13 @@ textarea {
     margin: 2.5rem 0rem;
   }
 
-  /* SKILL SECTION */
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR SKILL SECTION               |
+|______________________________________________|
+
+*/
 
   .skillSection {
     height: auto;
@@ -1286,7 +1376,13 @@ textarea {
     width: 19rem;
   }
 
-  /* PROJECT SECTION */
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR PROJECT SECTION             |
+|______________________________________________|
+
+*/
 
   .projectSection {
     height: auto;
@@ -1320,7 +1416,13 @@ textarea {
     right: 0;
   }
 
-  /* CONTACT SECTION */
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR CONTACT SECTION             |
+|______________________________________________|
+
+*/
 
   .contactSection {
     height: auto;
@@ -1354,11 +1456,16 @@ textarea {
     display: none;
   }
 
-  /* FOTTER */
+/*
+ ______________________________________________
+|                                              |
+|          CSS FOR FOTTER SECTION              |
+|______________________________________________|
+
+*/
 
   .footer {
     height: auto;
-    /* display: none; */
     padding-top: 2rem;
   }
 
