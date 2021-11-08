@@ -310,7 +310,7 @@
                     <form action="" class="contactForm">
                         <div class="contactContent">
                             <label for="" class="contactLabel">Your Name</label>
-                            <input id="clientName" type="text" class="contactInput">
+                            <input required id="clientName" type="text" class="contactInput">
                         </div>
                         <div class="contactContent">
                             <label for="" class="contactLabel">Your Email</label>
@@ -318,12 +318,12 @@
                         </div>
                         <div class="contactContent">
                             <label for="" class="contactLabel">Your Message</label>
-                            <textarea id="clientMsg" placeholder="Type something if you want..." class="contactInput"
+                            <textarea required id="clientMsg" placeholder="Type something if you want..." class="contactInput"
                                 name="" rows="5"></textarea>
                         </div>
 
                         <div class="msgBtnDiv">
-                            <a type="submit" onclick='sendMail()' class="msgButton">
+                            <a  type="submit" onclick='sendMail()' class="msgButton">
                                 Send Message
                                 <i class="fas fa-angle-double-right msgIcon"></i>
                             </a>

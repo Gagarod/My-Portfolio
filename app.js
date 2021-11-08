@@ -40,11 +40,16 @@ function sendMail(params) {
     clientMail.value = "";
     clientMsg.value = "";
 
-    emailjs.send('gmail', 'template_o6ge12b', tempParams)
-        .then(function (res) {
-            console.log("sucess", res.status);
-            alert("Your message sent successfully");
-        });
+    if (clientName.value !== "" || clientMail.value !== "" || clientMsg.value !== "") {
+        emailjs.send('gmail', 'template_o6ge12b', tempParams)
+            .then(function (res) {
+                console.log("sucess", res.status);
+                alert("Your message sent successfully");
+            });
+    } else {
+        alert("Please fill all details");
+    }
+
 }
 
 // function for mobile device size navBar
@@ -208,7 +213,6 @@ function animeImgDiv() {
 var delayInMilliseconds = 600;
 function headingAnime() {
     const sectionTop = window.scrollY;
-    console.log(sectionTop);
 
     // For Laptop Device
     if (bodyWidth > 867) {
