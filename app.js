@@ -81,9 +81,14 @@ let bodyWidth = '';
 
 function m() {
     bodyWidth = document.querySelector('body').clientWidth;
-    getProjects().then(data => {
-        showProjects(data);
-    });
+    if (bodyWidth < 741) {
+        const mailSection = document.querySelector('.mailSection');
+        const logoSection = document.querySelector('.logoSection');
+         
+        mailSection.setAttribute("data-aos", "fade-down");
+        logoSection.setAttribute("data-aos", "fade-up");
+
+    }
 }
 
 setInterval(m, 100);
@@ -156,7 +161,7 @@ darkModeBtn.addEventListener('click', function () {
 
 
 window.addEventListener('scroll', scrollActive);
-// window.addEventListener('scroll', animeImgDiv);
+window.addEventListener('scroll', animeImgDiv);
 
 function scrollActive() {
     const scrollY = window.pageYOffset;
@@ -168,10 +173,7 @@ function scrollActive() {
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.navMenuDiv a[href*=' + sectionId + ']').classList.add('active-link');
-            // if (document.querySelector('.navMenuDiv a[href *= about ]' )) {
-            //     myImgDiv.style.animation = "1.5s loading"
-            //     myImgDiv.style.opacity = "1"
-            // }
+    
 
         } else {
             document.querySelector('.navMenuDiv a[href*=' + sectionId + ']').classList.remove('active-link');
@@ -182,6 +184,7 @@ function scrollActive() {
 
 const blobGenerator = document.querySelector('.blobGenerator');
 const myImgDiv = document.querySelector('.myImgDiv');
+const aboutSection = document.querySelector('#about');
 
 function animeBlobGenerator() {
     blobGenerator.style.animation = "1s ease-in loading"
@@ -189,8 +192,9 @@ function animeBlobGenerator() {
 }
 
 function animeImgDiv() {
+    const sectionTop = aboutSection.offsetBottom;
    
-    if (document.querySelector('.navMenuDiv a[href *= about ]' && scrollY > sectionTop && scrollY <= sectionTop + sectionHeight )) {
+    if (document.querySelector('.navMenuDiv a[href *= about]' && sectionTop > 50 )) {
         myImgDiv.style.animation = "1.5s loading"
         myImgDiv.style.opacity = "1"
     }
