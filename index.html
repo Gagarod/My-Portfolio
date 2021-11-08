@@ -10,8 +10,10 @@
     <meta name="description"
         content="Welcome to Neelesh Singh's Portfolio. Passionate Web Developer. Frontend MERN Developer" />
     <link rel="stylesheet" href="style.css">
-        <!-- Favicon -->
-        <link id='favicon' rel="shortcut icon" href="./images/orange-white.png" type="image/x-png">
+    <!-- AOS Librabry -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./images/orange-white.png" type="image/x-png">
     <!-- font-awesome-icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
@@ -165,10 +167,13 @@
                 </div>
 
                 <div class="descriptionAndCvDiv">
-                    <h2 class="aboutMeDesc">Hi, I'm Neelesh Singh and I've done my BTech from Galgotias University(2017-2021) in computer science. I am passionate
-                    about creating new code solutions for the problems and improving my skills. I have knowledge about frontend and I'm interested in MERN
-                    Stack in which I'd like to pursue my career in.</h2>
-                    <div class="expAndProjects">
+                    <h2 class="aboutMeDesc" data-aos="zoom-in-up" data-aos-delay="150">Hi, I'm Neelesh Singh and I've done my BTech from
+                        Galgotias
+                        University(2017-2021) in computer science. I am passionate
+                        about creating new code solutions for the problems and improving my skills. I have knowledge
+                        about frontend and I'm interested in MERN
+                        Stack in which I'd like to pursue my career in.</h2>
+                    <div class="expAndProjects" data-aos="fade-up" data-aos-delay="250">
                         <div class="yearsDiv">
                             <h3 class="yearExp">01+</h3>
                             <h4 class="yearAndPrjctDes">Years Experience</h4>
@@ -180,7 +185,7 @@
                         </div>
                     </div>
 
-                    <a class="downloadCvBtn" download="" href="./pdf/Neelesh_Singh_Resume .pdf">Download Resume <i
+                    <a data-aos="fade-up" data-aos-delay="350" class="downloadCvBtn" download="" href="./pdf/Neelesh_Singh_Resume .pdf">Download Resume <i
                             class="fas fa-download"></i></a>
                 </div>
             </div>
@@ -197,7 +202,7 @@
 
             <div class="allSkillsList">
 
-                <div class="skillData">
+                <div class="skillData" data-aos="fade-down">
                     <div class="skillsTitleAndICon">
                         <i class="fab fa-html5 skillsIcon"></i>
                         <h3 class="skillName">HTML</h3>
@@ -207,7 +212,7 @@
                     </div>
                 </div>
 
-                <div class="skillData">
+                <div class="skillData" data-aos="fade-down">
                     <div class="skillsTitleAndICon">
                         <i class="fab fa-css3-alt skillsIcon"></i>
                         <h3 class="skillName">CSS</h3>
@@ -217,7 +222,7 @@
                     </div>
                 </div>
 
-                <div class="skillData">
+                <div class="skillData" data-aos="fade-down">
                     <div class="skillsTitleAndICon">
                         <i class="fab fa-js skillsIcon"></i>
                         <h3 class="skillName">JavaScript</h3>
@@ -227,7 +232,7 @@
                     </div>
                 </div>
 
-                <div class="skillData">
+                <div class="skillData" data-aos="fade-down">
                     <div class="skillsTitleAndICon">
                         <i class="fab fa-cuttlefish skillsIcon"></i>
                         <h3 class="skillName">C/C++</h3>
@@ -237,7 +242,7 @@
                     </div>
                 </div>
 
-                <div class="skillData">
+                <div class="skillData" data-aos="fade-down">
                     <div class="skillsTitleAndICon">
                         <img class="skillsIcon" id="flutterIcon" src="./images/FlutterW.png" alt="flutter" />
                         <h3 class="skillName">Flutter</h3>
@@ -247,7 +252,7 @@
                     </div>
                 </div>
 
-                <div class="skillData">
+                <div class="skillData" data-aos="fade-down">
                     <div class="skillsTitleAndICon">
                         <i class="fab fa-github skillsIcon"></i>
                         <h3 class="skillName">Git & GitHub | VCS</h3>
@@ -271,11 +276,11 @@
                 <div id="allProject" class="allProjects">
                 </div>
 
-                <div class="showBtnDiv">
+                <div class="showBtnDiv" data-aos="fade-up" data-aos-delay="150">
                     <button id="showAll" class="showAllBtn">Show all
                         <i class="fas fa-angle-down"></i>
                     </button>
-    
+
                 </div>
 
             </div>
@@ -285,7 +290,7 @@
 
             <div class="contactDiv">
 
-                <div class="mailSection">
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="mailSection">
 
                     <div class="contactHeadingDiv">
                         <h1 class="contactHeading">Contact</h1>
@@ -317,7 +322,7 @@
 
                 </div>
 
-                <div class="logoSection">
+                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="logoSection">
 
                     <img src="./images/mail.png" alt="mail" class="mailImg">
 
@@ -411,6 +416,12 @@
 
 
     <script src="app.js"></script>
+    <!-- AOS Librabry JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

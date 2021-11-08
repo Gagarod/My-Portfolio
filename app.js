@@ -118,7 +118,7 @@ function showProjects(project) {
 
 function projectCreation(project) {
     projectsHTML += `
-        <div class="card" >
+        <div data-aos="fade-up" data-aos-delay="${i*150}" class="card" >
                 <img class="projectImg" src="${project.image}" alt="">
                     <div class="titleAndIconDiv">
                     <h3 class="projectTitle">${project.name}</h3>
@@ -168,11 +168,11 @@ function scrollActive() {
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.navMenuDiv a[href*=' + sectionId + ']').classList.add('active-link');
-           
-            if (document.querySelector('.navMenuDiv a[href *= ' + sectionId + ']' === '.navMenuDiv a[href *= about ]')) {
-                myImgDiv.style.animation = "1.5s loading"
-                myImgDiv.style.opacity = "1"
-            }
+            // if (document.querySelector('.navMenuDiv a[href *= about ]' )) {
+            //     myImgDiv.style.animation = "1.5s loading"
+            //     myImgDiv.style.opacity = "1"
+            // }
+
         } else {
             document.querySelector('.navMenuDiv a[href*=' + sectionId + ']').classList.remove('active-link');
         }
@@ -188,7 +188,11 @@ function animeBlobGenerator() {
     blobGenerator.style.opacity = "1"
 }
 
-// function animeImgDiv() {
-//     myImgDiv.style.animation = "1.5s loading"
-//     myImgDiv.style.opacity = "1"
-// }
+function animeImgDiv() {
+   
+    if (document.querySelector('.navMenuDiv a[href *= about ]' && scrollY > sectionTop && scrollY <= sectionTop + sectionHeight )) {
+        myImgDiv.style.animation = "1.5s loading"
+        myImgDiv.style.opacity = "1"
+    }
+
+}
