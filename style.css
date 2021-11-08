@@ -266,12 +266,12 @@ main {
 .blobGenerator {
   margin-left: -4rem;
   opacity: 0;
-  /* animation: 1s ease-in-out loading; */
 }
 
 @keyframes loading {
   0% {
     clip-path: inset(0px 90% 0% 0%);
+    opacity: 0;
   }
   100% {
     opacity: 1;
@@ -364,11 +364,22 @@ main {
 
 .myImgDiv {
   margin: 1rem;
+  opacity: 0;
 }
 
 .myImg {
   width: 18.75rem;
   border-radius: 15px;
+}
+
+@keyframes scrolling {
+  0% {
+    clip-path: inset(0px 0% 100% 0%);
+  }
+  100% {
+    opacity: 1;
+    clip-path: inset(0px 0% 0% 0%);
+  }
 }
 
 .aboutMeDesc {
@@ -1015,12 +1026,16 @@ textarea {
 
 .copyright h3 {
   font-size: 1.5rem;
+  opacity: 0;
 }
 
 .copyright h4 {
   margin: 0rem 0.3rem;
   font-family: "Dancing Script", cursive;
   font-size: 1.5rem;
+  opacity: 0;
+  /* animation-delay: 600ms !important; */
+
 }
 
 .fotterLine {

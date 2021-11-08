@@ -162,6 +162,7 @@ darkModeBtn.addEventListener('click', function () {
 
 window.addEventListener('scroll', scrollActive);
 window.addEventListener('scroll', animeImgDiv);
+window.addEventListener('scroll', headingAnime);
 
 function scrollActive() {
     const scrollY = window.pageYOffset;
@@ -185,6 +186,9 @@ function scrollActive() {
 const blobGenerator = document.querySelector('.blobGenerator');
 const myImgDiv = document.querySelector('.myImgDiv');
 const aboutSection = document.querySelector('#about');
+const developedHeading = document.querySelector('.copyright h3');
+const nameHeading = document.querySelector('.copyright h4');
+
 
 function animeBlobGenerator() {
     blobGenerator.style.animation = "1s ease-in loading"
@@ -192,11 +196,30 @@ function animeBlobGenerator() {
 }
 
 function animeImgDiv() {
-    const sectionTop = aboutSection.offsetBottom;
+    const sectionTop = window.scrollY;
+    console.log(sectionTop);
    
-    if (document.querySelector('.navMenuDiv a[href *= about]' && sectionTop > 50 )) {
-        myImgDiv.style.animation = "1.5s loading"
+    if (sectionTop>371) {
+        myImgDiv.style.animation = "1s ease-in scrolling"
         myImgDiv.style.opacity = "1"
     }
 
 }
+
+var delayInMilliseconds = 600;
+function headingAnime() {
+    const sectionTop = window.scrollY;
+    console.log(sectionTop);
+
+    if (sectionTop > 3450) {
+        developedHeading.style.animation = "500ms ease-in loading"
+        developedHeading.style.opacity = "1"
+        setTimeout(function () {
+            nameHeading.style.animation = "500ms ease-in loading"
+            nameHeading.style.opacity = "1"
+        }, delayInMilliseconds);
+
+    }
+}
+
+
