@@ -1,3 +1,4 @@
+window.addEventListener('load', animeBlobGenerator);
 const allProjects = document.getElementById('allProject');
 const sections = document.querySelectorAll('section[id]');
 const scrollDownBtn = document.querySelector('.scrollDownBtn');
@@ -155,6 +156,7 @@ darkModeBtn.addEventListener('click', function () {
 
 
 window.addEventListener('scroll', scrollActive);
+// window.addEventListener('scroll', animeImgDiv);
 
 function scrollActive() {
     const scrollY = window.pageYOffset;
@@ -163,12 +165,30 @@ function scrollActive() {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 50;
         let sectionId = current.getAttribute('id');
-        
+
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.navMenuDiv a[href*=' + sectionId + ']').classList.add('active-link');
+           
+            if (document.querySelector('.navMenuDiv a[href *= ' + sectionId + ']' === '.navMenuDiv a[href *= about ]')) {
+                myImgDiv.style.animation = "1.5s loading"
+                myImgDiv.style.opacity = "1"
+            }
         } else {
             document.querySelector('.navMenuDiv a[href*=' + sectionId + ']').classList.remove('active-link');
         }
 
     });
 }
+
+const blobGenerator = document.querySelector('.blobGenerator');
+const myImgDiv = document.querySelector('.myImgDiv');
+
+function animeBlobGenerator() {
+    blobGenerator.style.animation = "1s ease-in loading"
+    blobGenerator.style.opacity = "1"
+}
+
+// function animeImgDiv() {
+//     myImgDiv.style.animation = "1.5s loading"
+//     myImgDiv.style.opacity = "1"
+// }

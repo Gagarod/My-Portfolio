@@ -265,6 +265,18 @@ main {
 
 .blobGenerator {
   margin-left: -4rem;
+  opacity: 0;
+  /* animation: 1s ease-in-out loading; */
+}
+
+@keyframes loading {
+  0% {
+    clip-path: inset(0px 90% 0% 0%);
+  }
+  100% {
+    opacity: 1;
+    clip-path: inset(0px 0% 0% 0%);
+  }
 }
 
 #blobSvg {
