@@ -28,28 +28,30 @@ const developedHeading = document.querySelector('.copyright h3');
 const nameHeading = document.querySelector('.copyright h4');
 
 // Send Mails
+
 function sendMail(params) {
-    var tempParams = {
-        to_name: "Neelesh singh",
-        from_name: clientName.value,
-        message: clientMsg.value,
-        reply_to: clientMail.value,
-    };
 
-    clientName.value = "";
-    clientMail.value = "";
-    clientMsg.value = "";
+    if (clientName.value == "" || clientMail.value == "" || clientMsg.value == "") {
+        alert("Please fill all details")
+    } else {
+        var tempParams = {
+            to_name: "Neelesh singh",
+            from_name: clientName.value,
+            message: clientMsg.value,
+            reply_to: clientMail.value,
+        };
 
-    if (clientName.value !== "" || clientMail.value !== "" || clientMsg.value !== "") {
+        clientName.value = "";
+        clientMail.value = "";
+        clientMsg.value = "";
+
         emailjs.send('gmail', 'template_o6ge12b', tempParams)
             .then(function (res) {
                 console.log("sucess", res.status);
                 alert("Your message sent successfully");
             });
-    } else {
-        alert("Please fill all details");
+    
     }
-
 }
 
 // function for mobile device size navBar
