@@ -272,7 +272,10 @@
                 </div>
 
                 <div class="showBtnDiv">
-                    <button id="showAll" class="showAllBtn">Show all</button>
+                    <button id="showAll" class="showAllBtn">Show all
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+    
                 </div>
 
             </div>
@@ -296,7 +299,7 @@
                         </div>
                         <div class="contactContent">
                             <label for="" class="contactLabel">Your Email</label>
-                            <input id="clientMail" type="email" class="contactInput">
+                            <input required id="clientMail" type="email" class="contactInput">
                         </div>
                         <div class="contactContent">
                             <label for="" class="contactLabel">Your Message</label>
@@ -305,7 +308,7 @@
                         </div>
 
                         <div class="msgBtnDiv">
-                            <a onclick='sendMail()' class="msgButton">
+                            <a type="submit" onclick='sendMail()' class="msgButton">
                                 Send Message
                                 <i class="fas fa-angle-double-right msgIcon"></i>
                             </a>
