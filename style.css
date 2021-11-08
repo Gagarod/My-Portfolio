@@ -647,7 +647,7 @@ main {
   overflow: hidden;
   width: 25rem;
   max-width: 90%;
-  transition: transform 0.2s ease 0s;
+  transition: transform 0.2s ease-in-out !important;
   transition: 0.3s;
   border-radius: 15px;
   background-color: var(--whiteFont);
@@ -656,7 +656,7 @@ main {
 }
 
 .card:hover {
-  transform: translateY(-0.35rem);
+  transform: translateY(-0.45rem) !important;
 }
 
 .projectLinks {
