@@ -1301,6 +1301,8 @@ textarea {
 
   .showBtnDiv {
     height: 13%;
+    left: 0;
+    right: 0;
   }
 
   /* CONTACT SECTION */
