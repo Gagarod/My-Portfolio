@@ -197,7 +197,6 @@ function animeBlobGenerator() {
 
 function animeImgDiv() {
     const sectionTop = window.scrollY;
-    console.log(sectionTop);
 
     if (sectionTop > 371) {
         myImgDiv.style.animation = "1s ease-in scrolling"
@@ -211,28 +210,34 @@ function headingAnime() {
     const sectionTop = window.scrollY;
     console.log(sectionTop);
 
-    if (bodyWidth > 740) {
+    // For Laptop Device
+    if (bodyWidth > 867) {
         if (sectionTop > 3450) {
-            developedHeading.style.animation = "500ms ease-in loading"
-            developedHeading.style.opacity = "1"
-            setTimeout(function () {
-                nameHeading.style.animation = "500ms ease-in loading"
-                nameHeading.style.opacity = "1"
-            }, delayInMilliseconds);
-
+            anime();
         }
     }
+    // For Mobile Device
     else if (bodyWidth < 741) {
         if (sectionTop > 5094) {
-            developedHeading.style.animation = "500ms ease-in loading"
-            developedHeading.style.opacity = "1"
-            setTimeout(function () {
-                nameHeading.style.animation = "500ms ease-in loading"
-                nameHeading.style.opacity = "1"
-            }, delayInMilliseconds);
-
+            anime();
         }
     }
+
+    // For Tablet Device
+    else if (bodyWidth > 741 && bodyWidth < 866) {
+       if (sectionTop > 6450) {
+            anime();
+        }
+    }
+}
+
+function anime() {
+    developedHeading.style.animation = "500ms ease-in loading"
+    developedHeading.style.opacity = "1"
+    setTimeout(function () {
+        nameHeading.style.animation = "500ms ease-in loading"
+        nameHeading.style.opacity = "1"
+    }, delayInMilliseconds);
 }
 
 
