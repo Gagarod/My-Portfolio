@@ -18,6 +18,7 @@
 
 :root {
   --blue-theme: #9a9ae0;
+  --blueAngle-shade: #7c7caf;
   --lightBlue-theme: #9a9ae0e0;
   --blueFont: #9a9ae1;
   --whiteFont: rgb(255, 255, 255);
@@ -29,6 +30,8 @@
   --flutter: #00c7fa;
   --git: #272b34;
   --body-color: white;
+  --btn-shadow: #ececec;
+  --btn-angleShadow: rgb(241, 241, 241);
 }
 
 html {
@@ -251,25 +254,26 @@ main {
   font-size: 1rem;
   font-weight: 600;
   padding: 1.25rem 1.875rem;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 10px;
   background-color: var(--blue-theme);
-  transition: 0.3s;
+  box-shadow: 0 5px var(--blueAngle-shade);
+}
+
+.contactMeBtn:hover,
+.contactMeBtn:active {
+  background-color: var(--lightBlue-theme);
+  top: 1px;
+  outline: none;
+  cursor: pointer;
 }
 
 .contactMeBtn i {
   font-size: 1.2rem;
   margin-left: 0.5rem;
   transition: 0.3s;
-}
-
-.contactMeBtn:hover,
-.contactMeBtn:active {
-  outline: none;
-  cursor: pointer;
-  background: var(--lightBlue-theme);
 }
 
 .contactMeBtn:hover i {
@@ -449,6 +453,7 @@ main {
   background-color: var(--blue-theme);
   cursor: pointer;
   outline: none;
+  box-shadow: 0 5px var(--blueAngle-shade);
 }
 
 .downloadCvBtn:hover,
@@ -838,15 +843,22 @@ textarea {
   font-weight: 600;
   padding: 4% 8%;
   width: 13.75rem;
-  border-radius: 10px;
-  background-color: var(--white-shade);
   cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 10px;
   outline: none;
-  transition: 0.3s;
+  background-color: var(--white-shade);
+  box-shadow: 0 5px #d3d6d8;
 }
-
-.msgButton:hover,
+.msgButton:hover {
+  box-shadow: 0 3px #d3d6d8;
+  top: 1px;
+  outline: none;
+  cursor: pointer;
+}
 .msgButton:active {
+  box-shadow: 0 0 #d3d6d8;
+  top: 5px;
   outline: none;
   cursor: pointer;
 }
@@ -857,7 +869,7 @@ textarea {
 }
 
 .msgButton:hover i {
-  transform: translateX(5px);
+  transform: translateX(6px);
 }
 
 .logoSection {
@@ -1041,7 +1053,9 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
+
 
 .footerSocialLinks i {
   color: #9a9ae0;
@@ -1051,6 +1065,11 @@ textarea {
 .fotterLink {
   font-weight: 700;
   color: var(--white-shade);
+}
+
+.fotterLink:hover {
+  font-weight: 700;
+  color: #0e0e52;
 }
 
 .copyright {
@@ -1090,7 +1109,7 @@ textarea {
 */
 
 @media screen and (min-width: 741px) {
-/*
+  /*
  ______________________________________________
 |                                              |
 |     DEFAULT BODY AND OTHER CSS TAG           |
@@ -1103,7 +1122,7 @@ textarea {
     box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
   }
 
-/*
+  /*
  ______________________________________________
 |                                              |
 |             CSS FOR NAVBAR                   |
@@ -1138,7 +1157,7 @@ textarea {
 }
 
 @media screen and (max-width: 740px) {
-/*
+  /*
  ______________________________________________
 |                                              |
 |     DEFAULT BODY AND OTHER CSS TAG           |
@@ -1153,7 +1172,7 @@ textarea {
     height: auto;
   }
 
-/*
+  /*
  ______________________________________________
 |                                              |
 |             CSS FOR NAVBAR                   |
@@ -1214,7 +1233,7 @@ textarea {
     border-bottom: none;
   }
 
-/*
+  /*
  ______________________________________________
 |                                              |
 |          CSS FOR HOME SECTION                |
@@ -1291,7 +1310,7 @@ textarea {
     margin-left: 0.7rem;
   }
 
-/*
+  /*
  ______________________________________________
 |                                              |
 |          CSS FOR ABOUT SECTION               |
@@ -1338,7 +1357,7 @@ textarea {
     margin: 2.5rem 0rem;
   }
 
-/*
+  /*
  ______________________________________________
 |                                              |
 |          CSS FOR SKILL SECTION               |
@@ -1371,7 +1390,7 @@ textarea {
     width: 19rem;
   }
 
-/*
+  /*
  ______________________________________________
 |                                              |
 |          CSS FOR PROJECT SECTION             |
@@ -1411,7 +1430,7 @@ textarea {
     right: 0;
   }
 
-/*
+  /*
  ______________________________________________
 |                                              |
 |          CSS FOR CONTACT SECTION             |
@@ -1451,7 +1470,7 @@ textarea {
     display: none;
   }
 
-/*
+  /*
  ______________________________________________
 |                                              |
 |          CSS FOR FOTTER SECTION              |
